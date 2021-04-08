@@ -5,7 +5,7 @@ const server = require('./api/server');
 const port = process.env.PORT || 1245
 // const path = require("path")
 
-app.use("/api/users/:id", (_,res) => {
+app.use("/api/users/", (_,res) => {
     res.json({data: "users information"})
 })
 
