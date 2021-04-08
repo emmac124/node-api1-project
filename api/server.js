@@ -6,7 +6,7 @@ const User = require("./users/model")
 const server = express()
 
 server.use(express.json())
-server.use("/api/users/", (_,res) => {
+server.use("/api/", (_,res) => {
     res.json({data: "users information"})
 })
 
