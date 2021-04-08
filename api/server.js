@@ -1,14 +1,10 @@
 // BUILD YOUR SERVER HERE
-const dotenv = require("dotenv").config()
 const express = require("express")
 const User = require("./users/model")
 
 const server = express()
 
 server.use(express.json())
-server.use("/api/", (_,res) => {
-    res.json({data: "users information"})
-})
 
 //ENDPOINTS
 
